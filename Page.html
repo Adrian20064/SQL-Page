@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Metadatos -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Aprende SQL desde cero con este blog educativo. Domina bases de datos, comandos SQL, y accede a un curso profesional recomendado."
+      content="Curso práctico 'SQL Como Crear Bases de Datos': aprende desde diseño hasta implementación, con lecciones paso a paso."
     />
     <meta
       name="keywords"
-      content="SQL, bases de datos, aprender SQL, curso SQL, MySQL, PostgreSQL, Hotmart"
+      content="SQL, curso SQL, bases de datos, Hotmart, aprender SQL, diseño bases de datos"
     />
-    <meta name="robots" content="index, follow" />
-    <title>Aprende SQL Profesionalmente | Blog Educativo</title>
+    <title>SQL: Crea y Administra Bases de Datos | Curso Profesional</title>
 
-    <!-- Google Fonts -->
+    <!-- Fuentes & Favicon -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Favicon confiable -->
     <link
       rel="icon"
       type="image/png"
       href="https://fonts.gstatic.com/s/i/materialicons/database/v1/24px.svg"
     />
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
@@ -47,145 +45,156 @@
     <header
       class="bg-gradient-to-r from-blue-900 to-blue-700 text-white p-6 shadow sticky top-0 z-50"
     >
-      <div
-        class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between"
-      >
-        <h1 class="text-3xl font-extrabold">📘 Aprende SQL Profesionalmente</h1>
-        <nav class="mt-2 sm:mt-0 text-sm space-x-4">
-          <a href="#comandos" class="hover:underline">Comandos</a>
-          <a href="#videos" class="hover:underline">Videos</a>
+      <div class="max-w-6xl mx-auto flex items-center justify-between">
+        <h1 class="text-3xl font-extrabold">
+          📘 SQL: Crea y Administra Bases de Datos
+        </h1>
+        <nav class="text-sm space-x-4">
+          <a href="#beneficios" class="hover:underline">Beneficios</a>
           <a href="#curso" class="hover:underline">Curso</a>
+          <a href="#faq" class="hover:underline">FAQ</a>
         </nav>
       </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-5xl mx-auto px-4 py-10">
-      <!-- Introducción -->
-      <section class="mb-16" id="intro">
-        <h2 class="text-3xl font-bold mb-4">🔍 ¿Qué es SQL?</h2>
-        <p class="text-lg mb-4">
-          SQL (Structured Query Language) es el lenguaje estándar para
-          interactuar con bases de datos relacionales. Permite consultar,
-          insertar, actualizar y eliminar datos de manera eficiente.
+    <main class="max-w-5xl mx-auto px-4 py-12">
+      <!-- Sección 1: Introducción -->
+      <section id="intro" class="mb-16">
+        <h2 class="text-3xl font-bold mb-4">🔍 ¿Por qué aprender SQL?</h2>
+        <p class="text-lg mb-6">
+          SQL es la columna vertebral de todas las bases de datos relacionales.
+          Esencial para desarrolladores, analistas de datos, administradores de
+          sistemas e incluso profesionales de negocio.
         </p>
         <img
-          src="https://cdn.educba.com/academy/wp-content/uploads/2019/11/ER-Diagram-vs-Relational-Schema.png"
-          alt="Diagrama relacional de base de datos (tablas y relaciones)"
+          src="base-datos.png"
+          alt="Diagrama relacional claro"
           class="rounded shadow-md mx-auto w-full max-w-2xl"
         />
       </section>
 
-      <!-- Comandos Básicos -->
-      <section class="mb-16" id="comandos">
-        <h2 class="text-3xl font-bold mb-6">💻 Comandos SQL Esenciales</h2>
-        <div class="space-y-2 text-lg">
-          <p><strong>SELECT</strong> – Extrae información de una tabla.</p>
-          <p><strong>INSERT</strong> – Agrega nuevos registros.</p>
-          <p><strong>UPDATE</strong> – Modifica datos existentes.</p>
-          <p><strong>DELETE</strong> – Elimina registros.</p>
-          <p><strong>JOIN</strong> – Combina datos de múltiples tablas.</p>
-        </div>
-        <pre
-          class="bg-gray-100 mt-6 p-4 rounded shadow text-sm overflow-x-auto"
-        ><code>SELECT nombre, correo FROM usuarios WHERE activo = 1;</code></pre>
-      </section>
-
-      <!-- Videos -->
-      <section class="mb-16" id="videos">
-        <h2 class="text-3xl font-bold mb-6">🎥 Videos Educativos</h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <iframe
-            src="https://www.youtube.com/embed/27axs9dO7AE"
-            class="rounded shadow"
-            height="250"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            src="https://www.youtube.com/embed/HXV3zeQKqGY"
-            class="rounded shadow"
-            height="250"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-
-      <!-- Conceptos Avanzados -->
-      <section class="mb-16">
-        <h2 class="text-3xl font-bold mb-6">📚 Conceptos Avanzados</h2>
+      <!-- Sección 2: Beneficios del curso -->
+      <section
+        id="beneficios"
+        class="mb-16 bg-blue-50 p-8 rounded-lg shadow-lg"
+      >
+        <h2 class="text-3xl font-bold mb-4">
+          🎯 Beneficios del curso “SQL Como Crear Bases de Datos”
+        </h2>
         <ul class="list-disc pl-6 space-y-2 text-lg">
-          <li><strong>Índices:</strong> mejoran el rendimiento de búsqueda.</li>
-          <li><strong>Joins:</strong> INNER, LEFT, RIGHT y FULL JOIN.</li>
-          <li><strong>Normalización:</strong> elimina redundancia de datos.</li>
-          <li><strong>Transacciones y ACID:</strong> garantizan integridad.</li>
           <li>
-            <strong>Vistas:</strong> consultas almacenadas como tablas
-            virtuales.
+            Acompañamiento paso a paso en cada módulo
+            :contentReference[oaicite:9]{index=9}
           </li>
-          <li><strong>Triggers:</strong> ejecutan acciones automáticas.</li>
           <li>
-            <strong>Procedimientos Almacenados:</strong> código SQL
-            reutilizable.
+            Explicación de errores comunes y cómo resolverlos
+            :contentReference[oaicite:10]{index=10}
           </li>
+          <li>
+            “Datos dorados”: tips y trucos profesionales
+            :contentReference[oaicite:11]{index=11}
+          </li>
+          <li>
+            Estructurado por módulos + lecciones enfocadas
+            :contentReference[oaicite:12]{index=12}
+          </li>
+          <li>Domina diseño, creación, consultas y gestión de bases</li>
         </ul>
       </section>
 
-      <!-- Curso Hotmart -->
-      <section
-        id="curso"
-        class="bg-yellow-100 p-8 rounded-lg border-2 border-yellow-300 text-center shadow-lg mb-16"
-      >
-        <h2 class="text-3xl font-bold mb-4">🚀 Curso Completo de SQL</h2>
-        <p class="text-lg mb-4">
-          Domina SQL desde cero hasta experto con este curso en español. Acceso
-          de por vida, material descargable, ejercicios reales y certificado
-          incluido.
-        </p>
-        <a
-          href="https://go.hotmart.com/G100462806B"
-          target="_blank"
-          class="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-900 transition block max-w-md mx-auto mb-2"
-        >
-          👉 Ver página de ventas
-        </a>
-        <a
-          href="https://go.hotmart.com/G100462806B?dp=1"
-          target="_blank"
-          class="text-blue-800 underline"
-          >Acceso directo al producto</a
-        >
+      <!-- Sección 3: Contenido técnico ampliado -->
+      <section class="mb-16">
+        <h2 class="text-3xl font-bold mb-4">🛠️ Qué aprenderás en este curso</h2>
+        <div class="space-y-6 text-lg">
+          <p>
+            <strong>✅ Diseño y modelado:</strong> aprende a normalizar y
+            garantizar integridad referencial usando claves primarias y
+            foráneas.
+          </p>
+          <p>
+            <strong>✅ DDL avanzado:</strong> usa CREATE, ALTER, DROP para
+            gestionar esquemas de forma profesional.
+          </p>
+          <p>
+            <strong>✅ ERD a tablas reales:</strong> traduce tu diagrama al
+            motor SQL paso a paso.
+          </p>
+          <p>
+            <strong>✅ Manejo de errores:</strong> identifica errores comunes
+            (tipo de datos, constraints) y cómo resolverlos.
+          </p>
+          <p>
+            <strong>✅ Datos dorados:</strong> trucos profesionales para
+            optimizar consultas, índices y rendimiento.
+          </p>
+        </div>
       </section>
 
-      <!-- FAQ -->
-      <section class="mb-16">
+      <!-- Sección 4: CTA + Video -->
+      <section id="curso" class="mb-16 text-center">
+        <h2 class="text-3xl font-bold mb-4">🚀 Accede al curso y domina SQL</h2>
+        <a
+          href="https://go.hotmart.com/G100462806B"
+          class="bg-blue-700 text-white px-8 py-4 rounded text-xl hover:bg-blue-900 transition inline-block mb-4"
+          target="_blank"
+        >
+          Ver página de ventas </a
+        ><br />
+        <a
+          href="https://go.hotmart.com/G100462806B?dp=1"
+          class="text-blue-800 underline"
+          target="_blank"
+          >Acceder directo al curso</a
+        >
+        <div class="mt-8">
+          <iframe
+            src="https://www.youtube.com/embed/27axs9dO7AE"
+            class="mx-auto rounded shadow-lg"
+            width="560"
+            height="315"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <!-- Sección 5: FAQ -->
+      <section id="faq" class="mb-16">
         <h2 class="text-3xl font-bold mb-6">❓ Preguntas Frecuentes</h2>
         <details class="bg-gray-100 p-4 rounded mb-4">
           <summary class="font-semibold cursor-pointer">
-            ¿Necesito ser programador para aprender SQL?
+            ¿Qué significa "datos dorados"?
           </summary>
           <p class="mt-2">
-            No. SQL es un lenguaje muy accesible, útil para analistas, marketers
-            y cualquier persona que trabaje con datos.
+            Son consejos exclusivos que optimizan tus consultas y diseño,
+            encontrados con experiencia real.
+          </p>
+        </details>
+        <details class="bg-gray-100 p-4 rounded mb-4">
+          <summary class="font-semibold cursor-pointer">
+            ¿Necesito tener conocimientos previos?
+          </summary>
+          <p class="mt-2">
+            No. Está diseñado desde cero: desde modelado hasta SQL avanzado.
           </p>
         </details>
         <details class="bg-gray-100 p-4 rounded">
           <summary class="font-semibold cursor-pointer">
-            ¿En qué bases de datos se usa SQL?
+            ¿Este curso incluye resolución de errores?
           </summary>
           <p class="mt-2">
-            Se utiliza en MySQL, PostgreSQL, SQLite, SQL Server, Oracle y más.
+            Sí. Cada módulo cubre errores comunes y cómo solucionarlos paso a
+            paso :contentReference[oaicite:13]{index=13}.
           </p>
         </details>
       </section>
     </main>
 
-    <!-- Footer anónimo -->
+    <!-- Footer -->
     <footer class="bg-blue-900 text-white text-center p-4">
-      <p>© <span id="year"></span> | Curso y blog educativo sobre SQL</p>
+      <p>© <span id="year"></span> | Curso educativo de SQL</p>
     </footer>
 
     <script>
-      // Año automático
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
